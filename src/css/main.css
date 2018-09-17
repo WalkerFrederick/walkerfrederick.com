@@ -110,6 +110,7 @@ html, body {
   margin: 0;
   padding: 0;
   background: var(--mygray);
+  font-family: var(--font);
 }
 
 /* NAVBAR START ------------------------------------------------------------*/
@@ -192,13 +193,29 @@ nav button {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 125px;
+}
+.projects-button {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects-button img{
+  width: 40px;
+  align-self: center;
 }
 .project {
+  display: inline-block;
   color: var(--second);
-  margin: 0;
-  max-width: 250px;
-  padding: 10px;
+  height: 100%;
+  width: 100%;
+  max-width: 350px;
+  padding: 0 10px;
+  margin: 10px 0;
   border-bottom: 4px solid var(--main);
+  box-sizing: border-box;
 }
 .project:hover {
   border-bottom: 4px solid var(--second);
@@ -210,7 +227,7 @@ nav button {
 }
 .project p {
   font-size: .8rem;
-  margin: inherit;
+  margin: 0;
 
 }
 .project a {
@@ -221,7 +238,29 @@ nav button {
 }
 
 
+@media screen and (max-width: 700px) {
+  #projectTwo {
+    display: none;
+  }
+  #projectThree {
+    display: none;
+  }
+}
 
+@media screen and (min-width: 800px) {
+  #projectOne {
+    display: block;
+  }
+  #projectTwo {
+    display: block;
+  }
+  #projectThree {
+    display: block;
+  }
+  .projects-button {
+    display: none;
+  }
+}
 
 
 

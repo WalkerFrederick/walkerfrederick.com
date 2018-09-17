@@ -13,7 +13,6 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -42,7 +41,8 @@
   </section>
   <section>
     <div class="projects">
-      <div id="projectOne" class="project">
+      <div onclick="prevProject()" class="projects-button"><img src="img/arrow.svg"></div>
+      <div id="projectOne" value="1" class="project">
         <h1>GA400 Stump Grinding</h1>
         <p>This is a super cool project i've been working on...</p>
         <a href="#">Learn More.</a>
@@ -57,13 +57,11 @@
         <p>This is a super cool project i've been working on...</p>
         <a href="#">my github.</a>
       </div>
-
+      <div onclick="nextProject()" style="transform: rotate(180deg)" class="projects-button"><img src="img/arrow.svg"></div>
     </div>
   </section>
 
-  <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
-  <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
