@@ -29,6 +29,7 @@
 
   <section>
     <div class="hdr">
+      <div class="hdr-tint">
       <div class="greeting">
         <h1 id="main-msg">Hello, World</h1>
         <h1 id="secondary-msg">Welcome to my domain.</h1>
@@ -37,28 +38,32 @@
         <button><img src="img/github.svg">Github</button>
         <button><img src="img/twitter.svg">Twitter</button>
       </div>
+      </div>
     </div>
   </section>
   <section>
     <div class="projects">
-      <div onclick="prevProject()" class="projects-button"><img src="img/arrow.svg"></div>
-      <div id="projectOne" value="1" class="project">
+      <div id="projectOne" value="1" class="project hvr-fade">
+        <a href="#" class="project-link"></a>
         <h1>GA400 Stump Grinding</h1>
         <p>This is a super cool project i've been working on...</p>
         <a href="#">Learn More.</a>
       </div>
-      <div id="projectTwo" class="project">
+      <div id="projectTwo" class="project hvr-fade">
+        <a href="#" class="project-link"></a>
         <h1>unibott</h1>
         <p>This is a super cool project i've been working on...</p>
         <a href="#">Learn More.</a>
       </div>
-      <div id="projectThree" class="project">
+      <div id="projectThree" class="project hvr-fade">
+        <a href="#" class="project-link"></a>
         <h1>more projects</h1>
         <p>This is a super cool project i've been working on...</p>
         <a href="#">my github.</a>
       </div>
       <div onclick="nextProject()" style="transform: rotate(180deg)" class="projects-button"><img src="img/arrow.svg"></div>
     </div>
+
   </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

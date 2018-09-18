@@ -30,3 +30,21 @@ let prevProject = function(){
   }
   else {console.log($('#projectOne').css('display'))}
 }
+
+let restoreSlides = function(x) {
+  if (x.matches) { // If media query matches
+    $('#projectTwo').css('display', 'block');
+    $('#projectOne').css('display', 'block');
+    $('#projectThree').css('display', 'block');
+  }
+  else {
+    $('#projectTwo').css('display', 'none');
+    $('#projectOne').css('display', 'block');
+    $('#projectThree').css('display', 'none');
+  }
+}
+
+let x = window.matchMedia("(min-width: 700px)");
+x.addListener(restoreSlides); // Attach listener function on state changes
+
+
