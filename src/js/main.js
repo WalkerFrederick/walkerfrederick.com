@@ -48,3 +48,9 @@ let x = window.matchMedia("(min-width: 700px)");
 x.addListener(restoreSlides); // Attach listener function on state changes
 
 
+
+
+var screenHeight = window.innerHeight
+
+$('.hdr').css('height', screenHeight - 150);
+

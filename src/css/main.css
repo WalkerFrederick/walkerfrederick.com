@@ -115,20 +115,53 @@ html, body {
   background: var(--mygray);
   font-family: var(--font);
 }
+button {
+  border-radius: 1px;
+}
+
+.color-hr {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  padding: 20px 0;
+  height: 5px;
+  width: 50%;
+}
+.color-hr-red{
+  background: var(--myred);
+  height: 100%;
+  width: 33.33%;
+
+}
+.color-hr-blue {
+  background: var(--myblue);
+  height: 100%;
+  width: 33.33%;
+}
+.color-hr-yellow {
+  background: var(--myyellow);
+  height: 100%;
+  width: 33.33%;
+}
 
 /* NAVBAR START ------------------------------------------------------------*/
 nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 40px;
+  z-index: 1000;
   display: flex;
-  position: relative;
+  flex-direction: center;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 10px;
   font-family: var(--handwritten);
-  background: var(--second);
-  box-shadow: 0 8px 6px -6px #999;
+  background:rgba(68,68,68,0.8);
 }
 nav a {
-  color: var(--main);
+  color: var(--second);
   font-size: 2rem;
   text-decoration: none;
   position: absolute;
@@ -148,7 +181,7 @@ nav button {
 
 /* HEADER START ------------------------------------------------------------*/
 .hdr {
-  height: 400px;
+  height: 250px;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -159,7 +192,7 @@ nav button {
   color: var(--second);
 }
 .hdr-tint {
-  background-color: rgba(53, 53, 53, 0.9);
+  background-color: rgba(68, 68, 68, 0.9);
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -208,7 +241,7 @@ nav button {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 125px;
+    height: 150px;
     box-shadow: -1px 2px 20px 0px rgba(0,0,0,0.75);}
 .projects-button {
   width: 50px;
@@ -280,7 +313,6 @@ nav button {
 
 @media screen and (max-width: 700px) {
   .project {
-
   }
   .project:hover {
     border-bottom: 4px solid var(--main);
@@ -294,8 +326,6 @@ nav button {
 }
 
 @media screen and (min-width: 701px) {
-  .greeting {
-  }
   .project {
 
   }
@@ -322,6 +352,87 @@ nav button {
     padding: 0 15%;
   }
 }
+
+/* PROJECTS END ------------------------------------------------------------*/
+
+.statement {
+  background: var(--second);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.statement-profile {
+  background: #36393B;
+  margin: 20px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+.statement h1 {
+  font-family: var(--handwritten);
+  font-size: 3.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.statement p {
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.statement h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+.statement h3 {
+  font-size: 1.25rem;
+  color: darkgray;
+  margin: 0;
+  padding: 0;
+}
+.skills {
+  height: 250px;
+  width: 100%;
+  max-width: 500px;
+}
+.skill {
+  height: 10px;
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+
+}
+.skill h1{
+  font-size: 1rem;
+  padding: 10px;
+  font-family: var(--font);
+}
+.skill-bar {
+  width: 100%;
+  height: 100%;
+  background: grey;
+  border-radius: 10px;
+}
+.skill-bar-fill {
+  width: 80%;
+  height: 100%;
+  background: #0b97c4;
+  border-radius: 10px;
+}
+
+
+
+
+
+
 
 
 
