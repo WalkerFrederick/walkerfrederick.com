@@ -1,6 +1,8 @@
-let header = $('.full-screen');
+let header = $('header');
+let innerheader = $('.header');
 
 header.css('height', window.innerHeight);
+innerheader.css('height', window.innerHeight);
 
 let menuClick = function () {
   let menu = $('.links-list');
