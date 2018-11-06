@@ -112,13 +112,14 @@ textarea {
 
 html, body {
   font-family: var(--main-font);
+  height: 2000px;
 }
 
 button {
   background: none;
   border: 2px solid var(--main);
   color: var(--main);
-  border-radius: 0px;
+  border-radius: 0;
   padding: 5px 15px;
   margin: 0 5px;
   min-width: 20px;
@@ -132,7 +133,7 @@ button:hover {
   outline: none;
 }
 nav {
-  padding: 0px 20px;
+  padding: 0 20px;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -204,6 +205,9 @@ nav {
   float: right;
 }
 @media only screen and (max-width: 900px) {
+  .logo {
+    font-size: 6vw;
+  }
   #menu-button {
     display: block;
   }
@@ -212,7 +216,7 @@ nav {
     background: var(--main);
     position: absolute;
     padding: 0;
-    width: 0px;
+    width: 0;
 
     top: 0;
     right: 0;
@@ -270,7 +274,7 @@ header {
   background: url("../img/stock1.jpeg") center;
   background-size: cover;
   filter: grayscale(100%) blur(4px) contrast(78%);
-  -webkit-filter: grayscale(100%) blur(4px) contrast(78%);S
+  -webkit-filter: grayscale(100%) blur(4px) contrast(78%);
 }
 
 .header {
@@ -296,7 +300,7 @@ header {
 }
 .header-greeting {
   margin-bottom: 10px;
-  font-size: 4.5rem;
+  font-size: 6vw;
   font-family: var(--off-font);
 }
 .header-description {
@@ -326,7 +330,11 @@ header {
   text-decoration: underline;
 }
 
-
+@media only screen and (max-width: 950px) {
+  .header-greeting {
+    font-size: 10vw;
+  }
+}
 
 /* ==========================================================================
    Helper classes
