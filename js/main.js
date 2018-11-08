@@ -3,6 +3,7 @@ let innerheader = $('.header');
 
 header.css('height', window.innerHeight);
 innerheader.css('height', window.innerHeight);
+$('.content').css('top', window.innerHeight - 3);
 
 let menuClick = function () {
   let menu = $('.links-list');
