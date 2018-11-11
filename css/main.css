@@ -112,7 +112,7 @@ textarea {
 
 html, body {
   font-family: var(--main-font);
-  height: 2000px;
+  height: 3000px;
 }
 
 hr {
@@ -415,6 +415,26 @@ header {
     top: initial;
     transform: translateY(50%);
   }
+}
+
+
+.contact {
+  background: var(--main);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.contact h1 {
+  margin-top: 0;
+  margin-left: 20px;
+}
+.contact-info {
+  text-align: center;
+  display: flex;
+}
+.contact img {
+  height: 48px;
+  width: 48px;
 }
 /* ==========================================================================
    Helper classes
