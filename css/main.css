@@ -422,15 +422,16 @@ header {
 
 .contact {
   padding: 20px;
-  background: var(--main);
+  background: url("../img/stock5.jpg") center;
+  background-size: cover;
 }
-.contact h1, h2 {
+.contact h1 , .contact p{
   margin: 20px;
   padding: 0;
   text-align: center;
 }
-.contact h2 {
-  font-size: 1em;
+.contact a {
+  text-decoration: underline;
 }
 .contact a:hover {
   color: var(--second);
@@ -469,6 +470,11 @@ header {
 }
 .submit {
   background: var(--third);
+  border: none;
+  color: var(--main);
+}
+.submit:hover {
+  background: lightgrey;
 }
 .contact-socials {
 
