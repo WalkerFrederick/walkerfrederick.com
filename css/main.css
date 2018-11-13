@@ -425,7 +425,7 @@ header {
   background: var(--main);
 }
 .contact h1, h2 {
-  margin: 0;
+  margin: 20px;
   padding: 0;
   text-align: center;
 }
@@ -451,12 +451,24 @@ header {
   justify-content: center;
 }
 .contact input {
+  width: 90%;
+  max-width: 600px;
   margin: 10px 0;
-  padding: 10px 0px;
-  width: 100%;
+  padding: 10px 10px;
+  align-self: center;
+  justify-self: center;
 }
 #message {
-  height: 200px;
+  justify-self: center;
+  max-width: 600px;
+  align-self: center;
+  margin: 10px 0;
+  width: 90%;
+  height: 100px;
+  padding: 10px 10px;
+}
+.submit {
+  background: var(--third);
 }
 .contact-socials {
 
