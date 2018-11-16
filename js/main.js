@@ -13,7 +13,7 @@ let menuClick = function () {
     setTimeout(() => {},1000);
     $('#menu-button').css('display', 'none');
     setTimeout(() => {$('#menu-exit').css('display', 'block');},100);
-    menu.css('height',window.innerHeight);
+    menu.css('height',window.innerHeight + 250);
   }
   else {
     $('#menu-exit').css('display', 'none');
